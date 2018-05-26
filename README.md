@@ -1,4 +1,4 @@
-# COLORFUL TERMINAL SETUP WITH GIT INFO
+# Colorful Terminal Setup with Git Info
 
 The macOS or Linux terminal is often very confusing. With the commands, prompts, and the outputs, all alike, it becomes very difficult to distinguish one from the other.
 Also, while working on git repositories, it is very helpful to see the branch you are on, and to autocomplete the Commit ID's. 
@@ -8,7 +8,7 @@ The included files provide this functionality.
 2. git-promt.sh - To Get Git-Repo Info in the promt.
 3. bash_profile - A sample .bash_profile file to change the colors of different parts of the prompt.
 
-# SETTING UP
+# Setting up
 
 1. Clone the repository / Download individual files.
 ```	
