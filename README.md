@@ -8,7 +8,17 @@ The included files provide this functionality.
 2. git-promt.sh - To Get Git-Repo Info in the promt.
 3. bash_profile - A sample .bash_profile file to change the colors of different parts of the prompt.
 
-# Setting up
+## Game Changers
+1. Be sure to try iTerm2 and tmux, to get multiple panes and sessions.
+More on it [a link](https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340)
+```
+	brew cask install iterm2
+```
+or if you don't have brew (which you should), download here - [a link](https://www.iterm2.com/downloads.html)
+
+2. Try Oh My Zsh - [a link](https://github.com/robbyrussell/oh-my-zsh)
+
+## Setting up
 
 1. Clone the repository / Download individual files.
 ```	
