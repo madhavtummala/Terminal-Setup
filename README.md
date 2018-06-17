@@ -10,13 +10,13 @@ The included files provide this functionality.
 
 ## Game Changers
 1. Be sure to try iTerm2 and tmux, to get multiple panes and sessions.
-More on it [a link](https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340)
+More on it [here](https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340)
 ```
 	brew cask install iterm2
 ```
-or if you don't have brew (which you should), download here - [a link](https://www.iterm2.com/downloads.html)
+or if you don't have brew (which you should), download here - [iterm2](https://www.iterm2.com/downloads.html)
 
-2. Try Oh My Zsh - [a link](https://github.com/robbyrussell/oh-my-zsh)
+2. Try Oh My Zsh - [github_repo](https://github.com/robbyrussell/oh-my-zsh)
 
 ## Setting up
 
