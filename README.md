@@ -8,6 +8,12 @@ The included files provide this functionality.
 2. git-promt.sh - To Get Git-Repo Info in the promt.
 3. bash_profile - A sample .bash_profile file to change the colors of different parts of the prompt.
 
+### With Iterm
+![Iterm2-Default](https://raw.githubusercontent.com/MadhavChoudhary/Terminal-Setup/master/Images/Iterm-Default.png)
+
+### With Terminal - Oh-my-Zsh - Agnoster
+![Terminal-Agnoster](https://raw.githubusercontent.com/MadhavChoudhary/Terminal-Setup/master/Images/Agnoster-OhmyZSH.png)
+
 ## Game Changers
 1. Be sure to try iTerm2 and tmux, to get multiple panes and sessions.
 More on it [here](https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340)
