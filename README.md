@@ -74,14 +74,22 @@ Hope it Helps to make your work easier. The git files have been provided by Udac
 
 ## Important Shortcuts
 
-Ctrl + A	Go to the beginning of the line you are currently typing on. This also works for most text input fields system 			wide. Netbeans being one exception.
-Ctrl + E	Go to the end of the line you are currently typing on. This also works for most text input fields system wide. 			Netbeans being one exception.
-Option + →	Move cursor one word forward.
-Option + ←	Move cursor one word backward.
-Tab		Auto-complete files and folder names.
-Ctrl + F	Move cursor one character forward.
-Ctrl + B	Move cursor one character backward.
-Ctrl + C	Kill whatever you are running.
-Ctrl + D	Exit the current shell when no process is running, or send EOF to a the running process.
-Ctrl + Z	Puts whatever you are running into a suspended background process. fg restores it.
+1. Ctrl + A	Go to the beginning of the line you are currently typing on. This also works for most text input fields system wide. Netbeans being one exception.
 
+2. Ctrl + E	Go to the end of the line you are currently typing on. This also works for most text input fields system wide. Netbeans being one exception.
+
+3. Option + →	Move cursor one word forward.
+
+4. Option + ←	Move cursor one word backward.
+
+5. Tab		Auto-complete files and folder names.
+
+6. Ctrl + F	Move cursor one character forward.
+
+7. Ctrl + B	Move cursor one character backward.
+
+8. Ctrl + C	Kill whatever you are running.
+
+9. Ctrl + D	Exit the current shell when no process is running, or send EOF to a the running process.
+
+10. Ctrl + Z	Puts whatever you are running into a suspended background process. fg restores it.
