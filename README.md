@@ -97,3 +97,13 @@ Hope it Helps to make your work easier. The git files have been provided by Udac
 |  ⌘  +  D  | Split Window Horizontally (same profile) |
 |  ⌘  +  d  | Split Window Vertically (same profile) |
 |  ⌘  +  W  | Close Window or Tab |
+|  ⌘ + [ / ⌘ + ] | Go to Split Pane by Order of Use |
+
+### Searching in Command History
+ 
+**Function** | **Shortcut**
+-------- | --------
+Search as you type | `Ctrl` + `r` and type the search term; Repeat `Ctrl` + `r` to loop through result
+Search the last remembered search term | `Ctrl` + `r` twice
+End the search at current history entry  | `Ctrl` + `y`
+Cancel the search and restore original line | `Ctrl` + `g`
