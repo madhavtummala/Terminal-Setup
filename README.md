@@ -94,13 +94,13 @@ Hope it Helps to make your work easier. The git files have been provided by Udac
 |  ⌘ + Enter  | Fullscreen  |
 |  ⌘ + <-  | Previous Tab |
 |  ⌘ + -> | Next Tab |
-|  ⌘  +  D  | Split Window Horizontally (same profile) |
-|  ⌘  +  d  | Split Window Vertically (same profile) |
-|  ⌘  +  W  | Close Window or Tab |
-|  ⌘ + [ / ⌘ + ] | Go to Split Pane by Order of Use |
+|  ⌘ + ⇧ + d | Split Window Horizontally (same profile) |
+|  ⌘ + d  | plit Window Vertically (same profile) |
+|  ⌘ + W  | Close Window or Tab |
+|  '⌘ + [' and '⌘ + ]' | Go to Split Pane by Order of Use |
 
 ### Searching in Command History
- 
+
 **Function** | **Shortcut**
 -------- | --------
 Search as you type | `Ctrl` + `r` and type the search term; Repeat `Ctrl` + `r` to loop through result
