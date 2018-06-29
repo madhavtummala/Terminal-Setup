@@ -72,7 +72,7 @@ or if you don't have brew (which you should), download here - [iterm2](https://w
 
 Hope it Helps to make your work easier. The git files have been provided by Udacity.
 
-## Important Shortcuts
+## Basic Shortcuts
 
 | Shortcut | Description |
 | ----------- | ----------- |
