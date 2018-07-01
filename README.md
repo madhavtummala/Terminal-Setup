@@ -76,7 +76,17 @@ Install Iterm2 from the link.
 
 Install oh-my-zsh from the link and follow the instructions to set the agnoster theme as the default theme.
 
+### Shorter Prompt
+
+1. Set the 'DEFAULT_USER' to avoid complete 'user@hostname'.  
+```
+	cd ~/.oh-my-zsh/themes
+	vi agnoster.zsh-theme
+```
+In Line `83`, you can see the working of this part of prompt. Set `DEFAULT_USER`, before this line or in `~/.zshrc` to match the `user` in `user@hostname`, ( or type `whoami` to get the user). Or change this section of code the way you want :)
+
 Hope it Helps to make your work easier. The git files have been provided by Udacity.
+
 
 ## Basic Shortcuts
 
