@@ -24,7 +24,9 @@ or if you don't have brew (which you should), download here - [iterm2](https://w
 
 2. Try Oh My Zsh - [github_repo](https://github.com/robbyrussell/oh-my-zsh)
 
-## Setting up
+## Setting up (Image 1)
+
+Install Iterm2 from the link.
 
 1. Clone the repository / Download individual files.
 ```	
@@ -68,7 +70,11 @@ or if you don't have brew (which you should), download here - [iterm2](https://w
 ```
 	export PATH=PATH:<your_path1>:<your_path2>
 ```
-8. You can change the appearance of terminal by going to Preferences/Profiles. You can change the font, font size, window size, font colors, opacity, blur, background color, actually you can change whatever you want.
+8. You can change the appearance of terminal by going to Preferences/Profiles. You can change the font, font size, window size, font colors, opacity, blur, background color, actually you can change whatever you want. (Solarised Dark Theme will be good)
+
+## Setting up (Image 2)
+
+Install oh-my-zsh from the link and follow the instructions to set the agnoster theme as the default theme.
 
 Hope it Helps to make your work easier. The git files have been provided by Udacity.
 
