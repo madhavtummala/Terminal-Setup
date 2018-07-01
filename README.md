@@ -85,8 +85,15 @@ Install oh-my-zsh from the link and follow the instructions to set the agnoster 
 ```
 In Line `83`, you can see the working of this part of prompt. Set `DEFAULT_USER`, before this line or in `~/.zshrc` to match the `user` in `user@hostname`, ( or type `whoami` to get the user). Or change this section of code the way you want :)
 
-Hope it Helps to make your work easier. The git files have been provided by Udacity.
+2. In the same file, search for prompt_dir() function or go to line `190`. Change it like this.
+```
+	prompt_dir() {
+	  prompt_segment blue black '%2~'
+	}
+```
+If you set to `%3~` instead, you will see last tree directories in path instead of whole path. Experiment, and then set it the way you like it.
 
+Hope it Helps to make your work easier. The git files have been provided by Udacity.
 
 ## Basic Shortcuts
 
