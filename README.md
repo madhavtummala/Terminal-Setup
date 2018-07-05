@@ -130,3 +130,13 @@ Search as you type | `Ctrl` + `r` and type the search term; Repeat `Ctrl` + `r` 
 Search the last remembered search term | `Ctrl` + `r` twice
 End the search at current history entry  | `Ctrl` + `y`
 Cancel the search and restore original line | `Ctrl` + `g`
+
+### Using Multiple Commands
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| [command-a]; [command-b] | Run command A and then B, regardless of success of A |
+| [command-a] && [command-b] | Run command B if A succeeded |
+| [command-a] \|\| [command-b] | Run command B if A failed |
+| [command-a] & | Run command A in background |
+| [command-a] \| [command-b] | Run command A and then pass the result to command B |
