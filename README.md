@@ -144,7 +144,8 @@ Cancel the search and restore original line | `Ctrl` + `g`
 ### Saving Terminal Output to a File
 
 |  Syntax  | visible in terminal | visible in terminal |  visible in file   |  visible in file   | existing file|
-| --- | --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: | :---: | 
+|     |	StdOut | StdErr | StdOut | StdErr | 	|
 |    >     |    no    |   yes    |   yes    |    no    | overwrite|
 |    >>    |    no    |   yes    |   yes    |    no    |  append|
 |          |          |          |          |          |	|
@@ -160,5 +161,5 @@ Cancel the search and restore original line | `Ctrl` + `g`
 | n.e. (*) |   yes    |   yes    |    no    |   yes    | overwrite|
 | n.e. (*) |   yes    |   yes    |    no    |   yes    |  append|
 |          |          |          |          |          |	|
-||& tee    |   yes    |   yes    |   yes    |   yes    | overwrite|
-||& tee -a |   yes    |   yes    |   yes    |   yes    |  append|
+| \|& tee    |   yes    |   yes    |   yes    |   yes    | overwrite|
+| \|& tee -a |   yes    |   yes    |   yes    |   yes    |  append|
