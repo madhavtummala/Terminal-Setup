@@ -104,7 +104,7 @@ Install iterm shell intergration in remote pc also, (not necessarily iterm, can 
 ```
 	export iterm2_hostname=<ip-address-of-remote-pc>
 ```
-in ~/.bash_profile or ~/.profile. We are basically hardcoding the ip/hostname -i
+in ~/.bash_profile or ~/.profile. We are basically hardcoding the hostname. Be sure to add :< portnumber > if ssh is working on some other port.
 
 ## Basic Shortcuts
 
