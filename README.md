@@ -95,6 +95,17 @@ If you set to `%3~` instead, you will see last tree directories in path instead 
 
 Hope it Helps to make your work easier. The git files have been provided by Udacity.
 
+## Setting up Iterm Shell Integration
+
+[Instructions](https://www.iterm2.com/documentation-shell-integration.html)
+
+The most amazing feature is drag and drop for scp. This feature will not work right out the box.
+Install iterm shell intergration in remote pc also, (not necessarily iterm, can be gnome terminal also), then if any hostname related error occurs during transfer, add the line 
+```
+	export iterm2_hostname=<ip-address-of-remote-pc>
+```
+in ~/.bash_profile or ~/.profile. We are basically hardcoding the ip/hostname -i
+
 ## Basic Shortcuts
 
 | Shortcut | Description |
