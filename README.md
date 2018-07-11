@@ -174,3 +174,27 @@ Cancel the search and restore original line | `Ctrl` + `g`
 |          |          |          |          |          |	|
 | \|& tee    |   yes    |   yes    |   yes    |   yes    | overwrite|
 | \|& tee -a |   yes    |   yes    |   yes    |   yes    |  append|
+
+### File/Directory Management
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| touch [file] |   Create a new file |
+| pwd | Full path to working directory |
+| . |  Current folder, e.g. `ls .` |
+| .. | Parent/enclosing directory, e.g. `ls ..` |
+| ls -l .. | Long listing of parent directory |
+| cd ../../ | Move 2 levels up |
+| cat | Concatenate to screen |
+| rm [file] |  Remove a file, e.g. `rm data.tmp` |
+| rm -r [dir] | Remove a directory and contents |
+| cp [file] [newfile] | Copy file to file |
+| cp [file] [dir] | Copy file to directory |
+| mv [file] [new filename] |  Move/Rename, e.g. `mv file1.ad /tmp` |
+| pbcopy < [file] | Copies file contents to clipboard |
+| pbpaste | Paste clipboard contents |
+| pbpaste > [file] | Paste clipboard contents into file, `pbpaste > paste-test.txt` |
+| mkdir [dir] | Create new directory |
+| mkdir -p [dir]/[dir] |  Create nested directories |
+| rmdir [dir] | Remove directory ( only operates on empty directories ) |
+| rm -R [dir] | Remove directory and contents |
