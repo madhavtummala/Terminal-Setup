@@ -198,3 +198,15 @@ Cancel the search and restore original line | `Ctrl` + `g`
 | mkdir -p [dir]/[dir] |  Create nested directories |
 | rmdir [dir] | Remove directory ( only operates on empty directories ) |
 | rm -R [dir] | Remove directory and contents |
+
+### Important Tools
+
+| find [dir] -name [search_pattern] | Search for files |
+| grep [search_pattern] [file] | Search for all lines that contain the pattern |
+| mdfind [search_pattern] | Spotlight search for files (names, content, other metadata)|
+| brew | Package Installer and manager for macOS |
+| sed | Edit files based on patter match | 
+| awk | Print/Operate on input text |
+| ps -ef | List of all Processes running |
+| htop | Processors and RAM Usage and managing processes | 
+| kill [PID] | kills the process with the process ID |   
