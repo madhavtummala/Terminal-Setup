@@ -201,12 +201,12 @@ Cancel the search and restore original line | `Ctrl` + `g`
 
 ### Important Tools
 
-| find [dir] -name [search_pattern] | Search for files |
-| grep [search_pattern] [file] | Search for all lines that contain the pattern |
-| mdfind [search_pattern] | Spotlight search for files (names, content, other metadata)|
-| brew | Package Installer and manager for macOS |
-| sed | Edit files based on patter match | 
-| awk | Print/Operate on input text |
-| ps -ef | List of all Processes running |
-| htop | Processors and RAM Usage and managing processes | 
-| kill [PID] | kills the process with the process ID |   
+| find [dir] -name [search_pattern] | Search for files |</br>
+| grep [search_pattern] [file] | Search for all lines that contain the pattern |</br>
+| mdfind [search_pattern] | Spotlight search for files (names, content, other metadata)|</br>
+| brew | Package Installer and manager for macOS |</br>
+| sed | Edit files based on patter match | </br>
+| awk | Print/Operate on input text |</br>
+| ps -ef | List of all Processes running |</br>
+| htop | Processors and RAM Usage and managing processes | </br>
+| kill [PID] | kills the process with the process ID |   </br>
