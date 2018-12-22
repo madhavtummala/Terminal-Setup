@@ -106,10 +106,8 @@ Install iterm shell intergration in remote pc also, (not necessarily iterm, can 
 ```
 in ~/.bash_profile or ~/.profile. We are basically hardcoding the hostname. Be sure to add :< portnumber > if ssh is working on some other port.
 
-## Setting up common mac os shortcuts to work with iTerm
 
-
-## Basic Shortcuts
+## Basic Shortcuts 
 
 | Shortcut | Description |
 | ----------- | ----------- |
@@ -136,12 +134,14 @@ Note that the `delete` button in mac keyboard acts as backspace and `fn+delete` 
 | Shortcut | Description |
 | ----------- | ----------- |
 |  ⌘ + Enter  | Fullscreen  |
-|  ⌘ + <-  | Previous Tab |
-|  ⌘ + -> | Next Tab |
 |  ⌘ + ⇧ + d | Split Window Horizontally (same profile) |
 |  ⌘ + d  | plit Window Vertically (same profile) |
 |  ⌘ + W  | Close Window or Tab |
-|  '⌘ + [' and '⌘ + ]' | Go to Split Pane by Order of Use |
+|  '⌘ + [' and '⌘ + ]' | Go to Split Pane by Order of Use |  
+
+### Setting iTerm to work with macOS shortcuts
+
+The above basic shortcuts to move around the command and text selection, won't work in iTerm by default, so we need to make some key-bindings for that to work.
 
 ### Searching in Command History
 
