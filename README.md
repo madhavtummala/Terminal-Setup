@@ -106,20 +106,30 @@ Install iterm shell intergration in remote pc also, (not necessarily iterm, can 
 ```
 in ~/.bash_profile or ~/.profile. We are basically hardcoding the hostname. Be sure to add :< portnumber > if ssh is working on some other port.
 
+## Setting up common mac os shortcuts to work with iTerm
+
+
 ## Basic Shortcuts
 
 | Shortcut | Description |
 | ----------- | ----------- |
-| Ctrl + A   | Go to the beginning of the line you are currently typing on. |
-| Ctrl + E   | Go to the end of the line you are currently typing on. |
+| ⌘ + <- | Go to the beginning of the line you are currently typing on. |
+| ⌘ + -> | Go to the end of the line you are currently typing on. |
+| ⌘ + ⇧ + <- | Select till the beginning of the line form the current cursor position |
+| ⌘ + ⇧ + -> | Select till the ending of the line form the current cursor position |
 | Option + ->  | Move cursor one word forward |
 | Option + <- | Move cursor one word backward |
+| Option + ⇧ + ->  | Add one more word to selection, forward |
+| Option + ⇧ + <- | Add one more word to selection, backward |
 | Tab  | Auto-complete files and folder names |
-| Ctrl + F   | Move cursor one character forward |
-| Ctrl + B   | Move cursor one character backward |
+| ⌘ + Del | Delete the line/command |
+| Option + Del | Delete a word to left of cursor |
+| Option + fn + Del | Delete a word to right of cursor |
 | Ctrl + C   | Kill whatever you are running |
 | Ctrl + D   | Exit the current shell when no process is running, or send EOF to a the running process |
-| Ctrl + Z   | Puts whatever you are running into a suspended background process. fg restores it. |
+| Ctrl + Z   | Puts whatever you are running into a suspended background process. fg restores it. |  
+
+Note that the `delete` button in mac keyboard acts as backspace and `fn+delete` acts as traditional delete button.  
 
 ### Iterm Specific
 
