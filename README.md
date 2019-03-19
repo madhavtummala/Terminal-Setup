@@ -82,7 +82,7 @@ Install Iterm2 from the link.
 
 ## Setting up (Image 2)
 
-Install oh-my-zsh from the link and follow the instructions to set the agnoster theme as the default theme.
+Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) and follow the instructions to set the agnoster theme as the default theme.
 
 ### Shorter Prompt
 
@@ -101,7 +101,7 @@ In Line `83`, you can see the working of this part of prompt. Set `DEFAULT_USER`
 ```
 If you set to `%3~` instead, you will see last tree directories in path instead of whole path. Experiment, and then set it the way you like it.
 
-Hope it Helps to make your work easier. The git files have been provided by Udacity.
+Hope it Helps to make your work easier.
 
 ## Setting up Iterm Shell Integration
 
