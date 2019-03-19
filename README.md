@@ -82,7 +82,17 @@ Install Iterm2 from the link.
 
 ## Setting up (Image 2)
 
-Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) and follow the instructions to set the agnoster theme as the default theme.
+### Install oh-my-zsh
+
+with curl
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+with wget
+```
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+```
+Go [here](https://github.com/robbyrussell/oh-my-zsh) for more information on plugins, settins, themes in oh-my-zsh!
 
 ### Shorter Prompt
 
