@@ -101,6 +101,15 @@ In Line `83`, you can see the working of this part of prompt. Set `DEFAULT_USER`
 ```
 If you set to `%3~` instead, you will see last tree directories in path instead of whole path. Experiment, and then set it the way you like it.
 
+3. Fixing '?' for non-ascii characters (in agnoster.zsh-theme)
+```
+	git clone https://github.com/powerline/fonts.git --depth=1
+	cd fonts
+	./install.sh
+	rm -rf fonts
+```
+Then use meslo for powerline font and use the same font for `non-ascii` text in termial profile settings.  
+
 Hope it Helps to make your work easier.
 
 ## Setting up Iterm Shell Integration
