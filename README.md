@@ -269,3 +269,25 @@ Cancel the search and restore original line | `Ctrl` + `g`
 | ps -ef | List of all Processes running |
 | htop | Processors and RAM Usage and managing processes | 
 | kill [PID] | kills the process with the process ID |   
+
+### Tips
+
+#### Ignoring `.DS_Store` files from git repositories
+
+Remove existing files from the repository:
+```
+find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
+```
+Add the line
+```
+.DS_Store
+```
+to the file .gitignore, which can be found at the top level of your repository (or created if it isn't there already). You can do this easily with this command in the top directory
+```
+echo .DS_Store >> .gitignore
+```
+Then
+```
+git add .gitignore
+git commit -m '.DS_Store banished!'
+```
