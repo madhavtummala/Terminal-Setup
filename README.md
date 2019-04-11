@@ -270,9 +270,9 @@ Cancel the search and restore original line | `Ctrl` + `g`
 | htop | Processors and RAM Usage and managing processes | 
 | kill [PID] | kills the process with the process ID |   
 
-### Tips
+## Tips
 
-#### Ignoring `.DS_Store` files from git repositories
+### Ignoring `.DS_Store` files from git repositories
 
 Remove existing files from the repository:
 ```
@@ -290,4 +290,32 @@ Then
 ```
 git add .gitignore
 git commit -m '.DS_Store banished!'
+```
+
+### Killing a process running in background
+
+If you just pushed the process to background (like by pressing ctrl+z), you can bring it back by `fg` and kill it by `ctrl+c`.  
+If you know the PID of the process, (shown when pressed ctrl+z), in a new terminal, run 
+```
+kill <pid> or
+kill -SIGQUIT <pid> or
+kill -SIGTERM <pid>
+```
+If you know just the name or part of name of that process.  
+You can see all the processes running in the local env, by `ps` and all process system wide by `ps -ef`.  
+Now, let us go step-by-step
+```
+ps -ef | grep <your_process_name>
+```
+This gives all the processes with matching name, now we need to exclude the grep <your_process_name> as that is not we want to kill for sure!
+```
+ps -ef | grep <your_process_name> | grep -v 'grep'
+```
+Now, we get the required process, hopefully only one. We need to extract the PID of this process. If you see carefully, it is the second column. We will use a simple awk command to pull it out.
+```
+ps -ef | grep <your_process_name> | grep -v 'grep' | awk 'print {$2}'
+```
+Now we need to kill that PID :)
+```
+ps -ef | grep <your_process_name> | grep -v 'grep' | awk 'print {$2}' | xargs kill	
 ```
