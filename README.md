@@ -26,11 +26,12 @@ or if you don't have brew (which you should), download here - [iterm2](https://w
 
 ## Setting
 
+## login shell
 You could actually set up both, one for iTerm2 and other for macOS Terminal
 
-Just install the [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), keep default login shell in one and command on the other as `/bin/zsh` on the other.  
+Just install the [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), keep default login shell in one and put the login command on the other as `/bin/zsh`.  
 To change the default login shell to bash, run `chsh -s /bin/bash`.  
-Bash shell will use `~/.bash_profile` or `.bashrc` for settings and zsh will use `~/.zshrc` for settings.  
+Bash shell will use `~/.bash_profile` or `~/.bashrc` for settings and zsh will use `~/.zshrc` for settings.  
 
 ## Setting up (Image 1)
 
