@@ -1,5 +1,7 @@
 # Fresh Catalina Terminal Setup
 
+<p align="center"><img src="Images/clear.jpg"></p>
+
 ## Clean Install macOS Catalina
 
 * Backup files
