@@ -36,21 +36,6 @@ alias python="/usr/local/bin/python3"
 alias pip="/usr/local/bin/pip3"
 ```
 
-### Vim Warnings
-
-If you get warnings while opening vim like this:  
-```bash
-Warning: Failed to set locale category LC_NUMERIC to en_CH.
-Warning: Failed to set locale category LC_TIME to en_CH.
-Warning: Failed to set locale category LC_COLLATE to en_CH.
-Warning: Failed to set locale category LC_MONETARY to en_CH.
-Warning: Failed to set locale category LC_MESSAGES to en_CH.
-```
-Add this to your `~/.zshrc`
-```bash
-export LC_ALL=en_US.UTF-8
-```
-
 ## Setting up SSH and GPG keys
 
 Install gnupg first.  
@@ -91,17 +76,6 @@ To edit the pass-phrase, after importing,
 gpg --edit-key <key-id>
 gpg> passwd #set the new pass-phrase
 ggp> save
-```
-
-### Commit singing error
-```bash
-backup ❯ git commit -m 'added new gpg key'                               master
-error: gpg failed to sign the data
-fatal: failed to write commit object
-```
-Add this to your `~/.zshrc`
-```bash
-export GPG_TTY=$(tty)
 ```
 
 ## Set Up ZSH
@@ -145,4 +119,35 @@ If you want to set your profile manually, these are the shortcuts I used.
 | Select by word left | ⌥ + ⇧ + ←  | Move Start of Selection Back, Move by word  | - |
 | Select by word right  | ⌥ + ⇧ + →  | Move End of Selection Forward, Move by word  | - |
 | Select by line left | ⌘ + ⇧ + ←   | Move Start of Selection Back, Move by line  | - |
-| Select by line right | ⌘ + ⇧ + →  | Move End of Selection Forward, Move by line  | - | 
+| Select by line right | ⌘ + ⇧ + →  | Move End of Selection Forward, Move by line  | - |
+
+## Errors
+
+### Vim Warnings
+
+If you get warnings while opening vim like this:  
+```bash
+Warning: Failed to set locale category LC_NUMERIC to en_CH.
+Warning: Failed to set locale category LC_TIME to en_CH.
+Warning: Failed to set locale category LC_COLLATE to en_CH.
+Warning: Failed to set locale category LC_MONETARY to en_CH.
+Warning: Failed to set locale category LC_MESSAGES to en_CH.
+```
+Add this to your `~/.zshrc`
+```bash
+export LC_ALL=en_US.UTF-8
+```
+### Commit singing error
+```bash
+backup ❯ git commit -m 'added new gpg key'                               master
+error: gpg failed to sign the data
+fatal: failed to write commit object
+```
+Add this to your `~/.zshrc`
+```bash
+export GPG_TTY=$(tty)
+```
+
+## Contributing
+Look [here](Tips.md) for tips and [here](Old.md) for my previous setups.  
+You can contribute to either of those documents and add sugesstions or errors in this setup document in case something doesn't work as expected.  
