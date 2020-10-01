@@ -121,6 +121,13 @@ If you want to set your profile manually, these are the shortcuts I used.
 | Select by line left | ⌘ + ⇧ + ←   | Move Start of Selection Back, Move by line  | - |
 | Select by line right | ⌘ + ⇧ + →  | Move End of Selection Forward, Move by line  | - |
 
+### nerd fonts installation
+You can install nerd fonts package via homebrew to use in [colorls](https://github.com/athityakumar/colorls) and for some cool icons in the prompt.
+```bash
+brew tap homebrew/cask-fonts
+brew cask install font-hack-nerd-font
+```
+
 ## Errors
 
 ### Vim Warnings
