@@ -2,12 +2,12 @@
 
 <p align="center"><img src="Images/clear.jpg"></p>
 
-## Clean Install macOS Catalina
+## Clean Install macOS Big Sur
 
 * Backup files
 * Restart and then press `⌘ + ⌥ + R` at startup chime
 * Wait for latest macOS to download on wifi
-* Erase all volumes in Disk Utility and install Catalina
+* Erase all volumes in Disk Utility and install Big Sur
 
 ## Installing tools
 
@@ -84,7 +84,7 @@ Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
 ### zsh theme
 We will use my theme called [clear](https://github.com/MadhavChoudhary/clear).  
 ```bash
-wget -O $ZSH_CUSTOM/themes/common.zsh-theme https://raw.githubusercontent.com/madhavchoudhary/clear/master/clear.zsh-theme
+wget -O $ZSH_CUSTOM/themes/clear.zsh-theme https://raw.githubusercontent.com/madhavchoudhary/clear/master/clear.zsh-theme
 ```
 Set `ZSH_THEME="clear"` in `~/.zshrc`. For reference the final `~/.zshrc` file will look like:  
 ```bash
@@ -101,6 +101,29 @@ alias lc="colorls"
 export LC_ALL=en_US.UTF-8
 export GPG_TTY=$(tty)
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+```
+You will need to install nerd-font for icons in the prompt to show up properly
+
+```bash
+brew tap homebrew/cask-fonts
+brew cask install font-hack-nerd-font
+```
+Then, in iTerm profile settings use a different font for non-ascii text and set it to hack nerd font mono.
+
+### Install colorls
+If you want to be a little extra, you can install [colorls](https://github.com/athityakumar/colorls). Use a personal installation of ruby.
+
+```bash
+brew install ruby
+echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.zshrc
+
+source ~/.zshrc
+gem install colorls
+echo "export PATH=$PATH:$(ruby -e 'puts Gem.bindir')" >> ~/.zshrc
+
+# Create alias
+alias lc="colorls"
+alias lcl="colorls -lA --sd"
 ```
 
 ### iterm2 profile
