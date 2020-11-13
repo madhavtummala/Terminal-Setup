@@ -144,6 +144,20 @@ If you want to set your profile manually, these are the shortcuts I used.
 | Select by line left | ⌘ + ⇧ + ←   | Move Start of Selection Back, Move by line  | - |
 | Select by line right | ⌘ + ⇧ + →  | Move End of Selection Forward, Move by line  | - |
 
+### Git setup
+Using ```git config --global --edit``` change your config
+```
+# This is Git's per-user configuration file.
+[user]
+        name = MadhavChoudhary
+        email = madhavtummala@icloud.com
+        signingkey = 2E214BB6870E6584
+[core]
+        editor = "nano -w"
+[commit]
+        gpgsign = true
+```
+
 ## Errors
 
 ### Vim Warnings
