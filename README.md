@@ -1,4 +1,4 @@
-# Fresh Catalina Terminal Setup
+# Fresh macOS Terminal Setup
 
 <p align="center"><img src="Images/clear.jpg"></p>
 
