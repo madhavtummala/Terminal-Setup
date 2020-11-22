@@ -35,6 +35,8 @@ This will first look for brewed binaries before system binaries.
 alias python="/usr/local/bin/python3"
 alias pip="/usr/local/bin/pip3"
 ```
+*Note: After openning iTerm2, do iTerm2 > Make iTerm2 Default Term*   
+*Note: Go to System Preferences > Keyboard > Shortcuts > Services, set a shortcut (I set ⌘ + 5) for new iTerm window/tab here* 
 
 ## Setting up SSH and GPG keys
 
