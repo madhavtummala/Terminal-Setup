@@ -18,9 +18,9 @@ First step for this is installing homebrew.
 ```
 Next install a bunch of stuff, that is needed using brew.  
 ```bash
-brew cask install iterm2
+brew install --cask iterm2
 brew install python
-brew cask install sublime-text
+brew install --cask sublime-text
 brew install vim nano bash zsh
 ```
 All these tools will be in `/usr/local/bin` which doesn't require `sudo`.  
@@ -83,6 +83,12 @@ ggp> save
 ## Set Up ZSH
 Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).  
 
+Setup syntax highlighting
+```
+brew install zsh-syntax-highlighting
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+```
+
 ### zsh theme
 We will use my theme called [clear](https://github.com/MadhavChoudhary/clear).  
 ```bash
@@ -93,7 +99,7 @@ Set `ZSH_THEME="clear"` in `~/.zshrc`. For reference the final `~/.zshrc` file w
 # Oh-my-zsh settings
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="clear"
-plugins=(git zsh-syntax-highlighting)
+plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User settings
@@ -103,12 +109,14 @@ alias lc="colorls"
 export LC_ALL=en_US.UTF-8
 export GPG_TTY=$(tty)
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
 You will need to install nerd-font for icons in the prompt to show up properly
 
 ```bash
 brew tap homebrew/cask-fonts
-brew cask install font-hack-nerd-font
+brew install --cask font-hack-nerd-font
+
 ```
 Then, in iTerm profile settings use a different font for non-ascii text and set it to hack nerd font mono.
 
