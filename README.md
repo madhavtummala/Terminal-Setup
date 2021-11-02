@@ -29,11 +29,9 @@ Add the following line in `~/.zshrc`.
 ```bash
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 ```
-This will first look for brewed binaries before system binaries.  
+or for M1
 ```bash
-# User settings
-alias python="/usr/local/bin/python3"
-alias pip="/usr/local/bin/pip3"
+export PATH=/opt/homebrew/bin:$PATH
 ```
 *Note: After openning iTerm2, do iTerm2 > Make iTerm2 Default Term*   
 *Note: Go to System Preferences > Keyboard > Shortcuts > Services, set a shortcut (I set ⌘ + 5) for new iTerm window/tab here* 
@@ -111,6 +109,28 @@ export GPG_TTY=$(tty)
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
+or for M1, the final file looked like
+```bash
+# Oh-my-zsh settings
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="clear"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
+
+# User settings
+alias python="/opt/homebrew/bin/python3"
+alias pip="/opt/homebrew/bin/pip3"
+alias lc="colorls"
+export LC_ALL=en_US.UTF-8
+export GPG_TTY=$(tty)
+export PATH=/opt/homebrew/bin/:/opt/homebrew/opt/ruby/bin/:$PATH
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export PATH=/opt/homebrew/bin/:/opt/homebrew/opt/ruby/bin/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/lib/ruby/gems/3.0.0/bin
+alias lc="colorls"
+alias lcl="colorls -lA --sd"
+```
+
 You will need to install nerd-font for icons in the prompt to show up properly
 
 ```bash
