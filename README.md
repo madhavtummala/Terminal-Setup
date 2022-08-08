@@ -87,6 +87,30 @@ brew install zsh-syntax-highlighting
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
 
+You will need to install nerd-font for icons in the prompt to show up properly
+
+```bash
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font
+```
+Then, in iTerm profile settings use a different font for non-ascii text and set it to hack nerd font mono.
+
+### Install colorls
+If you want to be a little extra, you can install [colorls](https://github.com/athityakumar/colorls). Use a personal installation of ruby.
+
+```bash
+brew install ruby
+echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.zshrc
+
+source ~/.zshrc
+gem install colorls
+echo "export PATH=$PATH:$(ruby -e 'puts Gem.bindir')" >> ~/.zshrc
+
+# Create alias
+alias lc="colorls"
+alias lcl="colorls -lA --sd"
+```
+
 ### zsh theme
 We will use my theme called [clear](https://github.com/MadhavChoudhary/clear).  
 ```bash
@@ -116,44 +140,18 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="clear"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# User settings
-alias python="/opt/homebrew/bin/python3"
-alias pip="/opt/homebrew/bin/pip3"
-alias lc="colorls"
+# Env settings
 export LC_ALL=en_US.UTF-8
 export GPG_TTY=$(tty)
 export PATH=/opt/homebrew/bin/:/opt/homebrew/opt/ruby/bin/:$PATH
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-export PATH=/opt/homebrew/bin/:/opt/homebrew/opt/ruby/bin/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/lib/ruby/gems/3.0.0/bin
-alias lc="colorls"
-alias lcl="colorls -lA --sd"
-```
-
-You will need to install nerd-font for icons in the prompt to show up properly
-
-```bash
-brew tap homebrew/cask-fonts
-brew install --cask font-hack-nerd-font
-
-```
-Then, in iTerm profile settings use a different font for non-ascii text and set it to hack nerd font mono.
-
-### Install colorls
-If you want to be a little extra, you can install [colorls](https://github.com/athityakumar/colorls). Use a personal installation of ruby.
-
-```bash
-brew install ruby
-echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.zshrc
-
-source ~/.zshrc
-gem install colorls
-echo "export PATH=$PATH:$(ruby -e 'puts Gem.bindir')" >> ~/.zshrc
-
-# Create alias
-alias lc="colorls"
-alias lcl="colorls -lA --sd"
+# Aliases
+alias python="/opt/homebrew/bin/python3"
+alias pip="/opt/homebrew/bin/pip3"
+alias lc="$(ruby -e 'puts Gem.bindir')/colorls"
+alias lcl="$(ruby -e 'puts Gem.bindir')/colorls -lA --sd"
 ```
 
 ### iterm2 profile
